@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardin - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Bernardin</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#projets" class="nav-link"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                <li><a href="#competences" class="nav-link"><i class="fas fa-cogs"></i> Compétences</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Je deviens</span>
+                    <br>
+                    <span class="highlight">développeur web</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <i class="fas fa-graduation-cap"></i>
+                    J'apprends avec des outils 100% gratuits
+                </p>
+                <p class="hero-description">
+                    Chaque jour, je progresse en HTML, CSS et JavaScript. 
+                    Ce site évoluera avec mes compétences et projets.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-rocket"></i> Commencer un projet
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="daysCounter">1</span>
+                        <span class="stat-label">jour de code</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">projets réalisés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">compétences acquises</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">index.html</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mon Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Bernardin&lt;/h1&gt;
+        &lt;p&gt;Développeur web en formation&lt;/p&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="projets"&gt;
+            &lt;h2&gt;Mes Projets&lt;/h2&gt;
+            &lt;!-- Les projets arrivent bientôt --&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section-projects">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-folder-open"></i>
+                Mes Projets
+            </h2>
+            <p class="section-subtitle">Découvrez mes réalisations et projets en cours</p>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="project-title">Site Portfolio</h3>
+                    <p class="project-description">
+                        Ce site même ! Construit avec HTML, CSS et JavaScript vanilla.
+                        Design responsive et animations modernes.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Voir en ligne
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code source
+                        </a>
+                    </div>
+                    <div class="project-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-text">Complet</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="project-title">Calculatrice JavaScript</h3>
+                    <p class="project-description">
+                        Calculatrice interactive avec fonctions avancées.
+                        Gestion des erreurs et interface utilisateur intuitive.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">DOM</span>
+                        <span class="tech-tag">CSS Grid</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Voir en ligne
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code source
+                        </a>
+                    </div>
+                    <div class="project-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <span class="progress-text">65%</span>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3 class="project-title">Application Météo</h3>
+                    <p class="project-description">
+                        Application météo utilisant une API gratuite.
+                        Affichage en temps réel, prévisions et géolocalisation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">Async/Await</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> En développement
+                        </a>
+                    </div>
+                    <div class="project-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <span class="progress-text">30%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section-skills">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Mes Compétences
+            </h2>
+            <p class="section-subtitle">Technologies et outils que j'apprends à maîtriser</p>
+            
+            <div class="skills-container">
+                <!-- Compétence 1 -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">HTML5</h3>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Structure sémantique, accessibilité, formulaires, intégration multimédia.
+                    </p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+
+                <!-- Compétence 2 -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">CSS3</h3>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Flexbox, Grid, animations, responsive design, variables CSS.
+                    </p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+
+                <!-- Compétence 3 -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">JavaScript</h3>
+                            <span class="skill-level">Débutant</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Manipulation DOM, événements, fonctions, ES6+, requêtes API.
+                    </p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%"></div>
+                    </div>
+                    <div class="skill-percentage">45%</div>
+                </div>
+
+                <!-- Compétence 4 -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Git & GitHub</h3>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Versionning, branches, pull requests, déploiement, collaboration.
+                    </p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <div class="skill-percentage">60%</div>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3 class="tools-title">
+                    <i class="fas fa-tools"></i>
+                    Outils que j'utilise
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool">
+                        <i class="fas fa-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fab fa-chrome"></i>
+                        <span>Chrome DevTools</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-terminal"></i>
+                        <span>Terminal</span>
+                    </div>
+                    <div class="tool">
+                        <i class="fas fa-palette"></i>
+                        <span>Adobe XD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-handshake"></i>
+                Contact & Réseaux
+            </h2>
+            <p class="section-subtitle">Suivez ma progression ou contactez-moi pour collaborer</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-title">Restons connectés</h3>
+                    <p class="contact-description">
+                        Je suis ouvert aux opportunités d'apprentissage, 
+                        collaborations ou simplement pour échanger sur le développement web.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bernardin@exemple.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>En ligne, partout dans le monde</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Disponibilité</h4>
+                                <p>Actuellement en formation intensive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <h3 class="social-title">Mes réseaux</h3>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <small>@bernardin-dev</small>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                            <small>Bernardin Dev</small>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                            <small>@bernardin_web</small>
+                        </a>
+                        <a href="https://codepen.io" target="_blank" class="social-link codepen">
+                            <i class="fab fa-codepen"></i>
+                            <span>CodePen</span>
+                            <small>Mes expérimentations</small>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <p>Vous avez un projet en tête ?</p>
+                        <a href="mailto:bernardin@exemple.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer un message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>Bernardin</span>
+                    </div>
+                    <p class="footer-description">
+                        Développeur web passionné en constante amélioration.
+                        Chaque ligne de code est une nouvelle opportunité d'apprendre.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-resources">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Code source du site</a></li>
+                        <li><a href="#">Mes outils gratuits</a></li>
+                        <li><a href="#">Tutoriels suivis</a></li>
+                        <li><a href="#">Documentations utiles</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-meta">
+                    <p>
+                        <i class="fas fa-heart"></i>
+                        Construit avec passion par Bernardin
+                    </p>
+                    <p>
+                        <i class="fas fa-server"></i>
+                        Hébergé gratuitement sur GitHub Pages
+                    </p>
+                </div>
+                
+                <div class="footer-update">
+                    <p id="currentDate">Chargement de la date...</p>
+                    <p id="visitCount">Première visite ?</p>
+                </div>
+            </div>
+            
+            <div class="footer-credits">
+                <p>© <span id="currentYear"></span> Bernardin. Tous droits réservés.</p>
+                <p class="footer-note">
+                    Ce site est un projet d'apprentissage et évolue régulièrement.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
